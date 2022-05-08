@@ -1,0 +1,14 @@
+<%- include("../layout/header.ejs", {title: "Lista de Checklists"}) %>
+<%- include("../layout/menu.ejs", {title: "Lista de Checklists"}) %>
+    <div>
+        <h2><%= checklist.name %></h2>
+        <h4>Tarefas</h4>
+        <% checklist.tasks.forEach(task =>{ %>
+            <div>
+                <p>
+                    Nome da tarefa
+                </p>
+            </div>
+        <% }) %>
+    </div>
+<%- include("../layout/footer.ejs") %>
